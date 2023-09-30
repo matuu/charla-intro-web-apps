@@ -1,0 +1,14 @@
+
+<html>
+    <head>
+        <title>Hola Mundo</title>
+        <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet" >
+    </head>
+    <body>
+        <h1>Soy todo un hacker!</h1>
+        <form method="post" action="/saluda">
+            <input type="text" name="nombre" placeholder="Escriba su nombre" />
+            <input type="submit" value="Saludar" />
+        </form>
+    </body>
+</html>
